@@ -3,10 +3,19 @@ version: 2
 sources:
   - name: raw
     schema: gz_raw_data
+    description: raw data set
     tables:
       - name: sales
         identifier: raw_gz_sales
+        description: sales data
+        columns:
+          - name: date_date
+            description: date of the order
+          - name: revenue
+            description: sales revenue annual
       - name: product
         identifier: raw_gz_product
+        description: raw product data
       - name: ship
         identifier: raw_gz_ship
+        description: raw shipping data
